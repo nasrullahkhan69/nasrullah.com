@@ -1,0 +1,319 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Home Page</title>
+        {% comment %} {% load static %} {% endcomment %}
+        <link rel="stylesheet" href="../static/front.css">
+     <style>
+        body {
+            min-height: 100%;
+            background-color: rgb(39, 39, 92);
+            background-image: url(img/thisisimage.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: auto;
+            
+        
+        }*{
+            margin: 0px;
+            padding: 0%;
+        }
+        
+        .txt {
+            color: black;
+            background-color: pink;
+            text-align: left;
+            font: optional;
+            font-size: 20px;
+            resize: none;
+            word-wrap: break-word;
+            padding: 5px 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 385px;
+            height: 115px;
+        }
+        
+        .welcome1 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+        }
+        
+        .exp-link {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            width: 33.33%;
+            background-color: royalblue;
+            padding: 1% 1%;
+            float: left;
+            text-align: left;
+        
+        }
+        
+        
+        .textutils {
+            padding-left: 6%;
+            font-size: 20px;
+            color: wheat;
+            resize: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        
+        .address-bar {
+            padding: 1% 6%;
+            background-color: #1f1c25ab;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            opacity: 90;
+            margin: 0%;
+        }
+        
+        .input-entries {
+            margin-left: 0%;
+            background-color: pink;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+        
+        }
+        
+        
+        
+        .diz {
+        
+            font-size: 20px;
+            color: wheat;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-left: 6%;
+            width: 180px;
+            display: inline-block;
+        
+        }
+        
+        .txt2 {
+            color: black;
+            background-color: pink;
+            text-align: left;
+            font: optional;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 385px;
+            height: 115px;
+        }
+        
+        .textutils2 {
+            padding-left: 6%;
+            font-size: 20px;
+            color: wheat;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        
+        
+        .nav-bar a {
+            font-family: 'Source Sans Pro', sans-serif;
+            padding: 14px 30px;
+            font-size: 17px;
+            float: left;
+            text-align: center;
+            background-color: rgb(255, 192, 203);
+            color: #1f1c25;
+            text-decoration: none;
+        }
+        
+        .nav-bar {
+            overflow: hidden;
+            background-color: rgb(255, 192, 203);
+        }
+        
+        .nav-bar a:hover {
+            color: rgb(255, 255, 255);
+            background-color: #179ed3;
+            transition-property: background-color;
+            transition-duration: 700ms;
+            display: flex;
+        }
+        
+        
+        .nav-bar a.active-cell {
+            background-color: #179ed3;
+            color: white;
+        }
+        
+        
+        footer {
+            position: absolute;
+            
+            color:white;
+            width: 100%;
+            height: 180px;
+            bottom: 0px;
+        }
+        footer, footer.footerdiv1, footer.footerdiv2 {
+            background-color:#091b22d5;
+        }
+        
+        
+        .sm {
+            width: 30px;
+            padding: 1% 1%;
+            filter: invert();
+            font-size: 20px;
+            font-family: verdana;
+            color: black;
+        }
+        
+        .address {
+            padding: 3% 9%;
+        }
+        
+        .footerdiv1 {
+        
+            float: left;
+            align-self: center;
+            color: white;
+            width: 50%;
+            font-family: verdana;
+            height: 150px;
+        }
+        
+        
+        
+        .footerdiv2 {
+            float: right;
+            align-items: center;
+            width: 50%;
+            height: 150px;
+            padding-top: 1%;
+        
+        }
+        
+        button {
+            background-color: rgb(255, 192, 203);
+            color:#1f1c25;
+            padding: 1% 1%;
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border:none;
+            border-radius: 5px;
+            user-select: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #179ed3;
+            border: none;
+            color:rgb(255, 255, 255);
+            border-radius: 15px;
+            transition: 200ms;
+        }
+        .buttondiv {
+            padding: 1% 0%;
+        
+        }
+        .checkbutt {
+            cursor: pointer;
+            user-select: none;
+            padding: 1% 1%;
+            color: rgb(68, 0, 255);
+            
+            
+            
+        }
+        
+     </style>   
+        
+    </head>
+    <body>
+        <header>
+
+            <div class="nav-bar">
+                <a class="active-cell" href="\" title="Home">Home</a>
+                <a href="experimentalPage" title="Experimental Page">Experiments</a>
+                <a href="services" title="Our Services">Services</a>
+                <a href="about" title="Our Purpose">About Us</a>
+                <a href="ourmission" title="Our Vision">Our Mission</a>
+                <a href="mailto:contact.nasrullah@gmail.com"
+                    title="contact.nasrullah@gmail.com" target="_blank">Contact
+                    Us</a>
+                <a class="" title="+923046963632"
+                    href="https://wa.me/+923046963632" target="_blank">WhatsApp
+                    Me</a>
+                <a href="login" title="Login your Account">Log In</a>
+                <a href="" title="Make your Account">Sign Up</a>
+                <a href="https://www.w3schools.com/css/" target="_blank">W3Schools</a>
+            </div>
+
+
+            <div>
+                <h1 class="welcome1">Welcome to my Website</h1>
+            </div>
+
+        </header>
+    
+    
+
+        <form action="/research" method="get" class="textutils">
+            <label>Enter your text</label><br>
+            <textarea class='txt' placeholder="Enter your text..." name="text"
+                spellcheck="false"></textarea><br>
+                    <input type="checkbox" name="cp" id="cp"><label class='checkbutt' for="cp">Upper Case</label><br>
+                    <input type="checkbox" name="lc" id="lc"><label class='checkbutt' for="lc">Lower Case</label><br>
+                    <input type="checkbox" name="rp" id="rp"><label class='checkbutt' for="rp">Remove Punctuation</label><br>
+                    <input type="checkbox" name="ct" id="ct"><label class='checkbutt' for="ct">Count Text</label><br>
+                    <input type="checkbox" name="cw" id="cw"><label class='checkbutt' for="cw">Count Words</label><br>
+                    <input type="checkbox" name="ff" id="ff"><label class='checkbutt' for="ff">Get Square</label><br>
+
+            
+
+            <div class="buttondiv">
+                <button>Submit</button><br><br>
+            </div>
+            
+        </form>
+
+
+    
+        <footer class="footermaindiv">
+            <div class="footerdiv1">
+                <address class="address">
+            
+                    <b>Developed by:</b> Muhammad Nasrullah<br>
+                    <b id="address">Contact info:</b> +92 319 6963632<br>
+                    nasrullah.com<br>
+                    207 Royal Orchard, Sahiwal<br>
+                    PAKISTAN<br>
+            
+                    <b>Published:</b> 10<sup>th</sup> January, 2023<br>
+                    <b>Last Updated:</b> 20<sup>th</sup> January, 2023<br>
+                </address>
+            </div>
+            
+            
+            <div class="footerdiv2">
+                <label class="sm"><b><i>Follow Us On</i></b></label><br>    
+                <a href="https:www.facebook.com" target="_blank"
+                title="Facebook"><img
+                    class="sm" src="{% static 'img/icons8-facebook-96.png' %}"
+                    alt="facebook"></a>
+            <a href="https:www.instagram.com" target="_blank"
+                title="Facebook"><img
+                    class="sm" src="{% static 'img/icons8-instagram-96.png' %}"
+                    alt="facebook"></a>
+            <a href="https:www.tiktok.com" target="_blank"
+                title="Facebook"><img
+                    class="sm" src="{% static 'img/icons8-tiktok-96.png' %}"
+                    alt="facebook"></a>
+            <a href="https:www.twitter.com" target="_blank"
+                title="Facebook"><img
+                    class="sm" src="{% static 'img/icons8-twitter-squared-96.png'%}"
+                    alt="facebook"></a><br>
+            </div>
+            </footer>
+       
+        
+        </body>
+</html>
